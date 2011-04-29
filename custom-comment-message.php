@@ -177,9 +177,13 @@ if (!class_exists("CustomCommentMessage")) {
 					current_user_can( 'edit_page', $post_id ) )
 			{
 				$ccm = $_POST['ccm_title_reply'];
-				add_post_meta($post_id, 'ccm_title_reply', $ccm, true)
-						or
-				update_post_meta($post_id, 'ccm_title_reply', $ccm);
+				if(!empty($ccm)){
+					add_post_meta($post_id, 'ccm_title_reply', $ccm, true)
+							or
+					update_post_meta($post_id, 'ccm_title_reply', $ccm);
+				}else{
+					delete_post_meta($post_id, 'ccm_title_reply');
+				}
 			}
 		}
 	}
