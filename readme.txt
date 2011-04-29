@@ -4,7 +4,7 @@ Donate link: http://plugintutorials.blogspot.com/p/donate.html
 Tags: comments, form, title, change
 Requires at least: 3.0
 Tested up to: 3.1.2
-Stable tag: 1.01
+Stable tag: 1.0.1
 
 Allows you to specify the title of the comments form of a post. You can do this per-post or set a global value.
 
