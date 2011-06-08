@@ -3,7 +3,7 @@
 Plugin Name: Custom Comment Message
 Plugin URI: http://plugintutorials.blogspot.com/2011/04/custom-comment-message-wordpress-plugin.html
 Description: Allows you to specify the title of the comments section.
-Version: 1.0
+Version: 1.0.2
 Author: ppg
 Author URI: http://plugintutorials.blogspot.com/
 License: GPL2
