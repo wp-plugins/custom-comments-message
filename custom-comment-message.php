@@ -84,7 +84,7 @@ if (!class_exists("CustomCommentMessage")) {
 		function ccm_setting_string() {
 			$option = get_option('ccm_title_reply');
 ?>
-			<input id='plugin_text_string' 
+			<input id='plugin_text_string'             
 				   name='ccm_title_reply' 
 				   size='40'
 				   type='text' 
@@ -111,7 +111,7 @@ if (!class_exists("CustomCommentMessage")) {
             <?php settings_fields('ccm_options'); ?>
 			<?php do_settings_sections(plugin_basename(__FILE__)); ?>
 
-            <input type="submit" 
+            <input type="submit" class="button-primary"
 				   value="<?php _e('Save Changes','ccm_textdomain')?>"
 				   name="Submit"/>
           </form>
@@ -131,7 +131,7 @@ if (!class_exists("CustomCommentMessage")) {
 			}
 
 			if(!empty($custom_message)){
-				$defaults["title_reply"] = $custom_message;
+				$defaults["title_reply"] = wp_kses_data($custom_message);
 			}
 			
 			return $defaults;
@@ -158,9 +158,9 @@ if (!class_exists("CustomCommentMessage")) {
 		    <input type="text"
 		           id="ccm_title_reply"
 		           name="ccm_title_reply"
-				   value="<?php echo get_post_meta($post->ID,
+				   value="<?php echo wp_kses_data(get_post_meta($post->ID,
                                                    'ccm_title_reply',
-                                                   true); ?>"
+                                                   true)); ?>"
 		           size="25" />
 <?php
 		}

@@ -4,13 +4,13 @@ Donate link: http://plugintutorials.blogspot.com/p/donate.html
 Tags: comments, form, title, change
 Requires at least: 3.0
 Tested up to: 3.1.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Allows you to specify the title of the comments form of a post. You can do this per-post or set a global value.
 
 == Description ==
 
-The plugin allows you to change the title of the comments form of a post. On a fresh Wordpress install, the title of the comments form will be 'Leave a Reply.' This plugin allows you to set the comments form title per-post or set a global default value for all posts. The creation of the plugin was fully tutorialized. Anyone interested can take a look at this <a href="http://plugintutorials.blogspot.com/p/wordpress-plugin-tutorial_27.html">Wordpress Plugin Tutorial</a>. The plugin is functional but I will not be able respond to inquiries or be updating the plugin on a regular basis. If you try this plugin don't forget to rate.
+The plugin allows you to change the title of the comments form of a post. On a fresh Wordpress install, the title of the comments form will be 'Leave a Reply.' This plugin allows you to set the comments form title per-post or set a global default value for all posts and pages. The creation of the plugin was fully tutorialized. Anyone interested can take a look at this <a href="http://plugintutorials.blogspot.com/p/wordpress-plugin-tutorial_27.html">Wordpress Plugin Tutorial</a>. The plugin is functional but I will not be able respond to inquiries or be updating the plugin on a regular basis. If you try this plugin don't forget to rate.
 
 == Installation ==
 
@@ -24,7 +24,7 @@ To instll the plugin,
 
 = Can I set the comments form title for pages? =
 
-The plugin currently does not support this.
+The global value will be set for both posts and pages. The plugin currently does not support per-page custom comments title.
 
 = Have any other questions? =
 
@@ -37,6 +37,10 @@ You can ask them at this <a href="http://plugintutorials.blogspot.com/2011/04/cu
 3. How it looks
 
 == Changelog ==
+= 1.0.2 =
+Added data sanitization.
+Made some corrections on the description.
+
 = 1.0.1 =
 Fixed a small bug.
 
